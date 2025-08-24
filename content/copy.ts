@@ -217,6 +217,6 @@ export const contact = {
 }
 
 export const footer = {
-  copyright: "© 2025 ChainSettle. All rights reserved.",
+  copyright: "© 2025 ChainSettle Inc. All rights reserved.",
   description: "Building the trust‑minimized infrastructure for Web3 automation.",
 }
