@@ -195,8 +195,8 @@ export const contact = {
     {
       type: "Email",
       label: "General Inquiries",
-      value: "hello@chainsettle.com",
-      href: "mailto:hello@chainsettle.com",
+      value: "general@chainsettle.com",
+      href: "mailto:general@chainsettle.com",
       icon: "mail",
     },
     {

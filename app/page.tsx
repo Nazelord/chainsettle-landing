@@ -5,36 +5,39 @@ import { hero, valuePropositions, products } from "@/content/copy"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import HeroBackground from "@/components/hero-background"
 
 export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="py-20 lg:py-32">
-        <div className="container">
-          <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
-              <span className="brand-text-gradient">
-                {hero.headline}
-              </span>
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-muted-foreground max-w-2xl mx-auto">
-              {hero.description}
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-4">
-              <Button asChild size="lg">
-                <Link href="/products">
-                  {hero.primaryCta}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button variant="outline" size="lg" asChild>
-                <Link href="/contact">{hero.secondaryCta}</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+<section className="relative isolate py-20 lg:py-32">
+  <HeroBackground />
+
+  <div className="mx-auto w-full max-w-7xl px-4">
+    <div className="relative z-10 mx-auto max-w-4xl text-center">
+      <h1 className="text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
+        <span className="brand-text-gradient">{hero.headline}</span>
+      </h1>
+
+      <p className="mt-6 text-lg leading-8 text-muted-foreground max-w-2xl mx-auto">
+        {hero.description}
+      </p>
+
+      <div className="mt-10 flex items-center justify-center gap-x-4">
+        <Button asChild size="lg">
+          <Link href="/products">
+            {hero.primaryCta}
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Link>
+        </Button>
+        <Button variant="outline" size="lg" asChild>
+          <Link href="/contact">{hero.secondaryCta}</Link>
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Value Propositions */}
       <section className="py-20 bg-muted/20">

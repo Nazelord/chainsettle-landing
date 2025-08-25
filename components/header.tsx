@@ -9,6 +9,8 @@ import { navigation } from "@/content/copy"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
+import { BrandLogo } from "./brand-logo"
 
 export function Header() {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -19,9 +21,9 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="mx-auto w-full max-w-7xl px-4 flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <div className="brand-gradient h-8 w-8 rounded-md"></div>
+          <BrandLogo size={32} priority />
           <span className="font-bold text-xl">ChainSettle</span>
         </Link>
 
@@ -69,7 +71,7 @@ export function Header() {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden border-t">
-          <nav className="container py-4">
+          <nav className="mx-auto w-full max-w-7xl px-4 py-4">
             <div className="flex flex-col space-y-3">
               {navigation.main.map((item) => (
                 <Link
