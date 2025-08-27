@@ -13,13 +13,13 @@ export const navigation = {
     { name: "Contact", href: "/contact" },
   ],
   footer: [
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms of Service", href: "#" },
+    { name: "Privacy Policy", href: "https://docsend.com/view/xdt8kjhhrwakwqfa"},
+    { name: "Terms of Service", href: "https://docsend.com/view/khkq7b925pjmec9i" },
   ],
 }
 
 export const hero = {
-  headline: "The trust‑minimized oracle powering Web3 automation",
+  headline: "The Trust‑Minimized Oracle Powering Web3 Automation",
   description: "ChainSettle is an Infrastructure‑as‑a‑Service platform that bridges Web2 systems and Web3 smart contracts. Build reliable automations with attestations, triggers, and an upcoming SDK.",
   primaryCta: "Explore Products",
   secondaryCta: "Contact Us",
@@ -53,9 +53,9 @@ export const products = {
     {
       id: "escrow-bridge",
       title: "Escrow Bridge",
-      description: "Secure cross-chain escrow solutions with automated settlement and trust-minimized operations.",
-      features: ["Cross-chain compatibility", "Automated settlement", "Trust-minimized security"],
-      status: "Available",
+      description: "Secure Multi-chain escrow solutions with automated settlement and trust-minimized operations.",
+      features: ["Multi-chain compatibility", "Automated settlement", "Trust-minimized security"],
+      status: "Independent Startup",
       href: "/products/escrow-bridge",
     },
     {
@@ -71,11 +71,12 @@ export const products = {
 
 export const escrowBridge = {
   title: "Escrow Bridge",
-  subtitle: "Secure Cross-Chain Escrow Solutions",
+  subtitle: "Secure Multi-Chain Escrow Solutions",
   description: "ChainSettle's Escrow Bridge provides secure, automated escrow services across multiple blockchain networks. Our trust-minimized architecture ensures reliable settlement while maintaining transparency and security.",
+  notice: "Escrow Bridge is positioned as an independent startup venture, separate from ChainSettle's core infrastructure offerings.",
   features: [
     {
-      title: "Cross-Chain Compatibility",
+      title: "Multi-Chain Compatibility",
       description: "Support for major blockchain networks with seamless interoperability.",
     },
     {
@@ -195,8 +196,8 @@ export const contact = {
     {
       type: "Email",
       label: "General Inquiries",
-      value: "general@chainsettle.com",
-      href: "mailto:general@chainsettle.com",
+      value: "info@chainsettle.com",
+      href: "mailto:info@chainsettle.com",
       icon: "mail",
     },
     {

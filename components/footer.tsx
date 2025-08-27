@@ -25,6 +25,8 @@ export function Footer() {
               <Link
                 key={item.name}
                 href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 {item.name}

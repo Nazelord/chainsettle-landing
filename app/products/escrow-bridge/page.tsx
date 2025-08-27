@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
+import { Alert, AlertDescription } from "@/components/ui/alert"
 
 export const metadata: Metadata = {
   title: 'Escrow Bridge - Secure Cross-Chain Escrow Solutions',
@@ -23,7 +24,7 @@ export default function EscrowBridgePage() {
         <div className="container">
           <div className="mx-auto max-w-4xl">
             <div className="text-center mb-8">
-              <Badge variant="default" className="mb-4">Available</Badge>
+              <Badge variant="default" className="mb-4">Independent Startup</Badge>
               <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-6">
                 {escrowBridge.title}
               </h1>
@@ -32,9 +33,15 @@ export default function EscrowBridgePage() {
               </p>
             </div>
             
-            <p className="text-lg leading-8 text-muted-foreground max-w-3xl mx-auto text-center">
+            <p className="text-lg leading-8 text-muted-foreground max-w-3xl mx-auto text-center mb-8">
               {escrowBridge.description}
             </p>
+
+            <Alert className="max-w-3xl mx-auto mb-10">
+              <AlertDescription className="text-center">
+                <strong>Note:</strong> {escrowBridge.notice}
+              </AlertDescription>
+            </Alert>
             
             <div className="mt-10 flex items-center justify-center gap-x-4">
               <Button asChild size="lg">
@@ -130,22 +137,22 @@ export default function EscrowBridgePage() {
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <div className="flex justify-between items-center">
-                    <span>Ethereum Mainnet</span>
+                    <span>Ethereum Sepolia</span>
                     <Badge variant="outline">Live</Badge>
                   </div>
                   <Separator />
                   <div className="flex justify-between items-center">
-                    <span>Polygon</span>
+                    <span>Base Sepolia</span>
                     <Badge variant="outline">Live</Badge>
                   </div>
                   <Separator />
                   <div className="flex justify-between items-center">
-                    <span>Arbitrum</span>
-                    <Badge variant="secondary">Coming Soon</Badge>
+                    <span>Blockdag Primordial</span>
+                    <Badge variant="outline">Live</Badge>
                   </div>
                   <Separator />
                   <div className="flex justify-between items-center">
-                    <span>Optimism</span>
+                    <span>Avalanche Fuji</span>
                     <Badge variant="secondary">Coming Soon</Badge>
                   </div>
                 </CardContent>
