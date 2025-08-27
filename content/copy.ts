@@ -53,8 +53,8 @@ export const products = {
     {
       id: "escrow-bridge",
       title: "Escrow Bridge",
-      description: "Secure cross-chain escrow solutions with automated settlement and trust-minimized operations.",
-      features: ["Cross-chain compatibility", "Automated settlement", "Trust-minimized security"],
+      description: "Secure Multi-chain escrow solutions with automated settlement and trust-minimized operations.",
+      features: ["Multi-chain compatibility", "Automated settlement", "Trust-minimized security"],
       status: "Available",
       href: "/products/escrow-bridge",
     },
@@ -71,11 +71,11 @@ export const products = {
 
 export const escrowBridge = {
   title: "Escrow Bridge",
-  subtitle: "Secure Cross-Chain Escrow Solutions",
+  subtitle: "Secure Multi-Chain Escrow Solutions",
   description: "ChainSettle's Escrow Bridge provides secure, automated escrow services across multiple blockchain networks. Our trust-minimized architecture ensures reliable settlement while maintaining transparency and security.",
   features: [
     {
-      title: "Cross-Chain Compatibility",
+      title: "Multi-Chain Compatibility",
       description: "Support for major blockchain networks with seamless interoperability.",
     },
     {
